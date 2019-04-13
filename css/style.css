@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*---------------------------*/
+/* main-hero */
+/*---------------------------*/
+
+.main-hero {
+    height: 700px;
+    min-height: 700px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+/*---------------------------*/
+/* video */
+/*---------------------------*/
+
+video {
+    object-fit: cover;
+}
+
+.vid-cnt {
+    display: flex;
+}
+
+.vid-cnt:after {
+    content: "";
+    width: 100%;
+    height: 176px;
+    background-color: black;
+    position: absolute;
+    bottom: -6%;
+    left: 0;
+}
+.bgvideo {
+    position: absolute;
+    top: -18%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+/*---------------------------*/
+/* page-header */
+/*---------------------------*/
+
+.page-header {
+    min-height: 100px;
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-logo {}
+
+.page-logo-link {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.page-nav {}
+
+.page-nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.page-nav-list li {}
+
+.page-nav-list a {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+@media (max-width: 770px) {
+    .page-header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .page-nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-hero {
+        background-color: #000;
+    }
+    video.bgvideo{
+        display: none;
+    }
+    .main-banner-title {
+        margin-top: 0px;
+    }
+    .main-hero {
+        background-image: url("../images/castle.jpg");
+        background-position: right;
+    }
+}
+
+/*---------------------------*/
+/* content */
+/*---------------------------*/
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000000000;
+
+} 
+
+.main-banner-title {
+    font-size: 90px;
+    font-weight: 900;
+    color:  rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 90px;
+}
+
+@media (max-width: 760px) {
+    .main-banner-title {
+        margin-top: 50px;
+    }
+    .vid-cnt:after {
+        display: none;
+    }
+}
+
+.video-button {
+    opacity: 0.6;
+}
+
+.img-content {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*---------------------------*/
+/* modal video */
+/*---------------------------*/
+
+.videobox {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.videobox:target {
+	outline: none;
+	display: block;
+}
+
+.videoModal {
+  border-radius: 0;
+  width: 870px;
+  margin:auto;
+}
+
+.videoModal .modal-header {
+    background: #000;
+    border: 0;
+    color: #fff;
+    position: relative;
+    height:35px; 
+}
+
+.videoModal .modal-body {
+    height: 489px;
+    padding: 0;
+    max-height: none;
+    overflow: hidden; 
+}
+
+.videoModal .modal-footer:empty {
+    display: none !important; 
+}
+
+.videoModal .close {
+    font-size: 24px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    text-shadow: none;
+    top: 0;
+    width: 38px; 
+}
+
+@media (max-width: 770px) {
+    .videoModal {
+        object-fit: contain;
+        width: 100%;
+    }
+
+}
