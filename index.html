@@ -5,7 +5,9 @@
         <title>Come along</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet"> 
+        <link rel="stylesheet" href="fonts/breathe/stylesheet.css"> 
+        <link rel="stylesheet" href="fonts/carolinia/stylesheet.css"> 
+        <link rel="stylesheet" href="fonts/narrow/stylesheet.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
 
@@ -17,8 +19,10 @@
 
 
             <div class="vid-cnt">
-                <video muted autoplay loop class="bgvideo" poster="images/placeholder.png" width="x" height="y">
-                    <source src="images/scotland 1.mp4" type="video/mp4">
+                <video width="100%" height="100%" class="bgvideo" autoplay buffered loop preload muted>
+                    <source src="video/scotland 1.mp4" type="video/mp4">
+                    <source src="video/scotland-1.ogv" type="video/ogv">
+                    <source src="video/scotland-1.webm" type="video/webm">
                 </video>
             </div>
 
@@ -63,7 +67,12 @@
                 
                             </div>
                 
-                            <div class="modal-body"><video width="870" height="489" src="images/scotland 1.mp4" frameborder="0" controls allowfullscreen=""></video></div>
+                            <div class="modal-body">
+                                <video width="870" height="489" frameborder="0" controls allowfullscreen="">
+                                    <source src="video/scotland 1.mp4" type="video/mp4">
+                                    <source src="video/scotland-1.ogv" type="video/ogv">
+                                    <source src="video/scotland-1.webm" type="video/webm">
+                                </video></div>
                 
                             <div class="modal-footer"></div>
                 

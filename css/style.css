@@ -9,6 +9,8 @@
     margin: 0 auto;
 }
 
+body {}
+
 /*---------------------------*/
 /* main-hero */
 /*---------------------------*/
@@ -76,7 +78,8 @@ video {
 
 .page-logo-link {
     color: #fff;
-    opacity: 0.5;
+    opacity: 0.8;
+    font-family: 'carolingiaregular';
 }
 
 .page-nav {}
@@ -90,12 +93,13 @@ video {
 
 .page-nav-list a {
     color: #fff;
-    opacity: 0.5;
+    opacity: 0.7;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     padding-left: 20px;
+    font-family: 'pr_celtic_narrownormal';
 }
 
 @media (max-width: 770px) {
@@ -144,10 +148,11 @@ video {
 .main-banner-title {
     font-size: 90px;
     font-weight: 900;
-    color:  rgba(255,255,255,0.5);
+    color:  rgba(255,255,255,0.6);
     text-transform: uppercase;
     text-align: center;
     margin-top: 90px;
+    font-family: 'breathe_fireregular';
 }
 
 @media (max-width: 760px) {
